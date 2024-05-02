@@ -36,6 +36,8 @@ extern "C" {
 #include "menu.h"
 #include "key.h"
 #include "led.h"
+#include "command.h"
+#include "cJSON.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -46,6 +48,7 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
 extern uint8_t sdMountFlag;
+extern uint8_t keyVal;
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

@@ -53,6 +53,8 @@
 
 /* USER CODE BEGIN PV */
 uint8_t sdMountFlag = 0;
+uint8_t cmdBuffer[120];
+uint8_t keyVal = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -107,6 +109,8 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   WS_TFT_Init();
+  HAL_UARTEx_ReceiveToIdle_DMA(&huart1,cmdBuffer, sizeof(cmdBuffer));
+  __HAL_DMA_DISABLE_IT(&hdma_usart1_rx,DMA_IT_HT);
   printf("System Init OK!\r\n");
   Staring_Menu();
   /* USER CODE END 2 */
@@ -114,6 +118,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
+	user_Menu();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -170,7 +175,29 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+//串口中断回调函数
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size){
+  if(huart->Instance == USART1){
+	command_Process(cmdBuffer,Size);
+	memset(cmdBuffer,0, sizeof(cmdBuffer));
+	HAL_UARTEx_ReceiveToIdle_DMA(&huart1,cmdBuffer, sizeof(cmdBuffer));
+	__HAL_DMA_DISABLE_IT(&hdma_usart1_rx,DMA_IT_HT);
+  }
+}
+//Second event callback
+void HAL_RTCEx_RTCEventCallback(RTC_HandleTypeDef *hrtc){
+  static RTC_DateTypeDef sDate = {0,0,0,0};
+  HAL_RTC_GetDate(hrtc,&hrtc->DateToUpdate,RTC_FORMAT_BIN);
+  if(sDate.Year != hrtc->DateToUpdate.Year || sDate.Month !=
+  hrtc->DateToUpdate.Month || sDate.Date != hrtc->DateToUpdate.Date){
+	HAL_RTCEx_BKUPWrite(hrtc,RTC_BKP_DR2,hrtc->DateToUpdate.Year);
+	HAL_RTCEx_BKUPWrite(hrtc,RTC_BKP_DR3,hrtc->DateToUpdate.Month);
+	HAL_RTCEx_BKUPWrite(hrtc,RTC_BKP_DR4,hrtc->DateToUpdate.Date);
+	sDate.Year = hrtc->DateToUpdate.Year ;
+	sDate.Month = hrtc->DateToUpdate.Month ;
+	sDate.Date = hrtc->DateToUpdate.Date;
+  }
+}
 /* USER CODE END 4 */
 
 /**
