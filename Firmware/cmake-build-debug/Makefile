@@ -520,6 +520,54 @@ Core/Startup/startup_stm32f103vetx.s.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj
 .PHONY : Core/Startup/startup_stm32f103vetx.s.obj
 
+Core/apps/src/cJSON.obj: Core/apps/src/cJSON.c.obj
+.PHONY : Core/apps/src/cJSON.obj
+
+# target to build an object file
+Core/apps/src/cJSON.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/cJSON.c.obj
+.PHONY : Core/apps/src/cJSON.c.obj
+
+Core/apps/src/cJSON.i: Core/apps/src/cJSON.c.i
+.PHONY : Core/apps/src/cJSON.i
+
+# target to preprocess a source file
+Core/apps/src/cJSON.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/cJSON.c.i
+.PHONY : Core/apps/src/cJSON.c.i
+
+Core/apps/src/cJSON.s: Core/apps/src/cJSON.c.s
+.PHONY : Core/apps/src/cJSON.s
+
+# target to generate assembly for a file
+Core/apps/src/cJSON.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/cJSON.c.s
+.PHONY : Core/apps/src/cJSON.c.s
+
+Core/apps/src/command.obj: Core/apps/src/command.c.obj
+.PHONY : Core/apps/src/command.obj
+
+# target to build an object file
+Core/apps/src/command.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/command.c.obj
+.PHONY : Core/apps/src/command.c.obj
+
+Core/apps/src/command.i: Core/apps/src/command.c.i
+.PHONY : Core/apps/src/command.i
+
+# target to preprocess a source file
+Core/apps/src/command.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/command.c.i
+.PHONY : Core/apps/src/command.c.i
+
+Core/apps/src/command.s: Core/apps/src/command.c.s
+.PHONY : Core/apps/src/command.s
+
+# target to generate assembly for a file
+Core/apps/src/command.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/command.c.s
+.PHONY : Core/apps/src/command.c.s
+
 Core/apps/src/key.obj: Core/apps/src/key.c.obj
 .PHONY : Core/apps/src/key.obj
 
@@ -1658,6 +1706,12 @@ help:
 	@echo ... Core/Src/ws_drive_tft.i
 	@echo ... Core/Src/ws_drive_tft.s
 	@echo ... Core/Startup/startup_stm32f103vetx.obj
+	@echo ... Core/apps/src/cJSON.obj
+	@echo ... Core/apps/src/cJSON.i
+	@echo ... Core/apps/src/cJSON.s
+	@echo ... Core/apps/src/command.obj
+	@echo ... Core/apps/src/command.i
+	@echo ... Core/apps/src/command.s
 	@echo ... Core/apps/src/key.obj
 	@echo ... Core/apps/src/key.i
 	@echo ... Core/apps/src/key.s

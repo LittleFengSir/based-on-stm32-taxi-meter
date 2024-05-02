@@ -207,6 +207,12 @@
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/Startup/startup_stm32f103vetx.s">
 			<Option target="Firmware.elf"/>
 		</Unit>
+		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/Inc/cJSON.h">
+			<Option target="Firmware.elf"/>
+		</Unit>
+		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/Inc/command.h">
+			<Option target="Firmware.elf"/>
+		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/Inc/key.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
@@ -214,6 +220,12 @@
 			<Option target="Firmware.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/Inc/menu.h">
+			<Option target="Firmware.elf"/>
+		</Unit>
+		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/src/cJSON.c">
+			<Option target="Firmware.elf"/>
+		</Unit>
+		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/src/command.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/src/key.c">
