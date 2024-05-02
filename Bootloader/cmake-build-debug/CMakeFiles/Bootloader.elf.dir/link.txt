@@ -1,0 +1,1 @@
+C:\STM32_needs\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe -g -Wl,-gc-sections,--print-memory-usage,-Map=C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/cmake-build-debug/Bootloader.map -mcpu=cortex-m3 -mthumb -mthumb-interwork -T C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/STM32F103VETX_FLASH.ld @CMakeFiles\Bootloader.elf.dir\objects1.rsp -o Bootloader.elf 

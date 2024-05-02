@@ -1,0 +1,3 @@
+C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/cmake-build-debug/CMakeFiles/Bootloader.elf.dir
+C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/cmake-build-debug/CMakeFiles/rebuild_cache.dir
