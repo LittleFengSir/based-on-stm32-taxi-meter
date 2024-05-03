@@ -12,5 +12,6 @@
 
 #include "main.h"
 
-void CheckButtonEvents();
+uint16_t getSensor_Count();
+void setSensor_Count(uint16_t count);
 #endif //APPS_CORE_APPS_INC_KEY_H_
