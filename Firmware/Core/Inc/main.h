@@ -38,6 +38,7 @@ extern "C" {
 #include "led.h"
 #include "command.h"
 #include "cJSON.h"
+#include "meter.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
