@@ -9,6 +9,7 @@
   */
 #include "command.h"
 #include "ctype.h"
+#include "rtc.h"
 uint8_t flag = 0;
 
 uint8_t parsedate(const char *date_str, int *year, int *month, int *day) {
@@ -36,6 +37,8 @@ void command_Process(uint8_t *str, uint16_t size) {
   int year, month, day;
   int hour, minute, second;
   int result;
+  RTC_DateTypeDef sDate;
+  RTC_TimeTypeDef sTime;
   if (strstr(str, "setdate")) flag = 1;
   if (strstr(str, "settime")) flag = 2;
   if (flag == 1) {
@@ -44,6 +47,10 @@ void command_Process(uint8_t *str, uint16_t size) {
 	result = parsedate(str, &year, &month, &day);
 	if (result == 0) {
 	  printf("Year: %d, Month: %d, Day: %d\r\n", year, month, day);
+	  sDate.Year = (uint8_t )(year % 100);
+	  sDate.Month = (uint8_t )month;
+	  sDate.Date = (uint8_t )day;
+	  HAL_RTC_SetDate(&hrtc,&sDate,RTC_FORMAT_BIN);
 	} else {
 	  printf("Error parsing date: %d\n", result);
 	}
@@ -54,6 +61,10 @@ void command_Process(uint8_t *str, uint16_t size) {
 	result = parseTime(str,&hour,&minute,&second);
 	if(result == 1){
 	  printf("Hours: %d, Minutes: %d, Seconds: %d\n", hour, minute, second);
+	  sTime.Hours = (uint8_t)hour;
+	  sTime.Minutes = (uint8_t)minute;
+	  sTime.Seconds = (uint8_t)second;
+	  HAL_RTC_SetTime(&hrtc,&sTime,RTC_FORMAT_BIN);
 	}
 	else{
 	  printf("Error parsing time: %d\n",result);
