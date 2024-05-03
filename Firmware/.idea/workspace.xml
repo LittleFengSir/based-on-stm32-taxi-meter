@@ -20,23 +20,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc0e42a9-447f-4767-81af-97495cfd60da" name="更改" comment="Add HAL_UARTEx_RxEventCallback &amp; HAL_RTCEx_RTCEventCallback">
+    <list default="true" id="bc0e42a9-447f-4767-81af-97495cfd60da" name="更改" comment="general">
       <change afterPath="$PROJECT_DIR$/Core/apps/Inc/meter.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Core/apps/src/meter.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/rtc.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/apps/src/command.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/src/command.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/apps/src/menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/src/menu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +122,7 @@
       <workItem from="1714630715763" duration="858000" />
       <workItem from="1714632372114" duration="397000" />
       <workItem from="1714643121017" duration="16606000" />
-      <workItem from="1714682272734" duration="8136000" />
+      <workItem from="1714682272734" duration="8865000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -205,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714678368510</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="general">
+      <option name="closed" value="true" />
+      <created>1714715884109</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714715884109</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,11 +218,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="add USART command" />
-    <MESSAGE value="general" />
     <MESSAGE value="add rtc" />
     <MESSAGE value="update menu function" />
     <MESSAGE value="add key control" />
     <MESSAGE value="Add HAL_UARTEx_RxEventCallback &amp; HAL_RTCEx_RTCEventCallback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add HAL_UARTEx_RxEventCallback &amp; HAL_RTCEx_RTCEventCallback" />
+    <MESSAGE value="general" />
+    <option name="LAST_COMMIT_MESSAGE" value="general" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/apps/src/meter.c</url>
+          <line>37</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
