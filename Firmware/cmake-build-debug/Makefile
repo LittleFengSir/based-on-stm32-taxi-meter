@@ -640,6 +640,30 @@ Core/apps/src/menu.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/menu.c.s
 .PHONY : Core/apps/src/menu.c.s
 
+Core/apps/src/meter.obj: Core/apps/src/meter.c.obj
+.PHONY : Core/apps/src/meter.obj
+
+# target to build an object file
+Core/apps/src/meter.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/meter.c.obj
+.PHONY : Core/apps/src/meter.c.obj
+
+Core/apps/src/meter.i: Core/apps/src/meter.c.i
+.PHONY : Core/apps/src/meter.i
+
+# target to preprocess a source file
+Core/apps/src/meter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/meter.c.i
+.PHONY : Core/apps/src/meter.c.i
+
+Core/apps/src/meter.s: Core/apps/src/meter.c.s
+.PHONY : Core/apps/src/meter.s
+
+# target to generate assembly for a file
+Core/apps/src/meter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Firmware.elf.dir\build.make CMakeFiles/Firmware.elf.dir/Core/apps/src/meter.c.s
+.PHONY : Core/apps/src/meter.c.s
+
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 
@@ -1721,6 +1745,9 @@ help:
 	@echo ... Core/apps/src/menu.obj
 	@echo ... Core/apps/src/menu.i
 	@echo ... Core/apps/src/menu.s
+	@echo ... Core/apps/src/meter.obj
+	@echo ... Core/apps/src/meter.i
+	@echo ... Core/apps/src/meter.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s
