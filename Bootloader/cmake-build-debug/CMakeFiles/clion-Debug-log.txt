@@ -8,8 +8,8 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- The C compiler identification is GNU 10.3.1
--- The CXX compiler identification is GNU 10.3.1
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
 -- The ASM compiler identification is GNU
 -- Found assembler: C:/STM32_needs/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
 -- Detecting C compiler ABI info
@@ -23,6 +23,6 @@ CMake Deprecation Warning:
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Minimal optimization, debug info included
--- Configuring done (1.8s)
--- Generating done (0.1s)
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
 -- Build files have been written to: C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/cmake-build-debug

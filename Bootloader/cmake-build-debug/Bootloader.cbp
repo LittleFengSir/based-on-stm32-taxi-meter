@@ -32,20 +32,12 @@
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/CMSIS/Include"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/Target"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/App"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/drivers"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/Target"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 Bootloader.elf"/>
@@ -69,20 +61,12 @@
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/CMSIS/Include"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/Target"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/App"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/drivers"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/Target"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
-					<Add directory="c:\stm32_needs\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 Bootloader.elf/fast"/>
@@ -136,12 +120,6 @@
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Inc/retarget.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Inc/rtc.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Inc/sdio.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Inc/stm32f1xx_hal_conf.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
@@ -170,12 +148,6 @@
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Src/retarget.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Src/rtc.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Src/sdio.c">
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Src/stm32f1xx_hal_msp.c">
@@ -310,12 +282,6 @@
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
@@ -323,15 +289,6 @@
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_sd.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_sram.h">
@@ -370,19 +327,10 @@
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rtc.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_sdmmc.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
@@ -415,12 +363,6 @@
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
 			<Option target="Bootloader.elf"/>
 		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
 			<Option target="Bootloader.elf"/>
 		</Unit>
@@ -428,15 +370,6 @@
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_sd.c">
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_sram.c">
@@ -454,127 +387,7 @@
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_fsmc.c">
 			<Option target="Bootloader.elf"/>
 		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_sdmmc.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/App/fatfs.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/App/fatfs.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/Target/bsp_driver_sd.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/Target/bsp_driver_sd.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/FATFS/Target/ffconf.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc_bot.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc_data.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc_scsi.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_bot.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_data.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/diskio.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/diskio.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/drivers/sd_diskio.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/drivers/sd_diskio.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/ff.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/ff.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/integer.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Middlewares/Third_Party/FatFs/src/option/syscall.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/STM32F103VETX_FLASH.ld">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App/usb_device.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App/usb_device.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App/usbd_desc.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App/usbd_desc.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App/usbd_storage_if.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/App/usbd_storage_if.h">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/Target/usbd_conf.c">
-			<Option target="Bootloader.elf"/>
-		</Unit>
-		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/USB_DEVICE/Target/usbd_conf.h">
 			<Option target="Bootloader.elf"/>
 		</Unit>
 		<Unit filename="C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/CMakeLists.txt">

@@ -1,20 +1,21 @@
 CMakeFiles/Bootloader.elf.dir/Core/Src/sysmem.c.obj: \
  C:\Work\Project\Stm32_Project\Taxi_meters\Bootloader\Core\Src\sysmem.c \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\errno.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\errno.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\reent.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\_ansi.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\newlib.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\_newlib_version.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\config.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\machine\ieeefp.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\features.h \
- c:\stm32_needs\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\_types.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\machine\_types.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\machine\_default_types.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\lock.h \
- c:\stm32_needs\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\stdint.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\_intsup.h \
- c:\stm32_needs\gcc-arm-none-eabi\arm-none-eabi\include\sys\_stdint.h
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/errno.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/errno.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ C:/STM32_needs/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+ C:/STM32_needs/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ C:/STM32_needs/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h
