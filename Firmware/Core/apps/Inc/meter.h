@@ -16,6 +16,9 @@
 
 
 void taxiSystemInit();
-
-
+float getPrice();
+float getSpeed();
+float getMileage();
+void setMileage(float km);
+uint8_t writePriceToConfig(float tempPrice);
 #endif //FIRMWARE_CORE_APPS_INC_METER_H_

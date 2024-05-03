@@ -12,10 +12,15 @@
 #include "stdlib.h"
 #include "fatfs.h"
 
-float price = 3;
+float price = 3.0f;
 char *date;
 char *username;
 char *pwd;
+//单位是米(m)
+float wheelRadius = 0.6f;
+float Mileage = 0.0f;
+
+float speed = 0;
 
 //日期参数
 //默认价钱
@@ -30,23 +35,10 @@ void createConfigFile() {
   cJSON *a = cJSON_CreateObject();
   cJSON_AddStringToObject(a, "Date", temp);
   cJSON_AddNumberToObject(a, "Price", price);
+  cJSON_AddNumberToObject(a, "Wheel_Radius", wheelRadius);
   cJSON_AddStringToObject(a, "username", "admin");
   cJSON_AddStringToObject(a, "pwd", "12345678");
   char *json_string = cJSON_Print(a);
-
-  //检查system目录是否存在
-  fre = f_opendir(&SDFile,"system");
-  if(fre == FR_OK){
-	printf("system dir exist\r\n");
-  }
-  else{
-	fre = f_mkdir("system");
-	if(fre == FR_OK){
-	  printf("create system dir successful\r\n");
-	} else{
-	  printf("create system file failure\r\n");
-	}
-  }
 
   //打开并创建文件
   fre =
@@ -71,10 +63,12 @@ uint8_t checkInitFile() {
   FRESULT fre;
   fre = f_open(&SDFile, "system/config.txt", FA_READ);
   if (fre == FR_OK) {
+	f_close(&SDFile);
 	return 0;
-  } else {
+  } else if(fre == FR_NO_FILE){
 	createConfigFile();
   }
+  f_close(&SDFile);
   return 1;
 }
 
@@ -152,6 +146,97 @@ void taxiSystemInit() {
   }
   cJSON_Delete(json);
   free(data);
+}
+
+float getPrice() {
+  return price;
+}
+float getSpeed() {
+  return speed;
+}
+float getMileage() {
+  return Mileage;
+}
+void setMileage(float km) {
+  Mileage = km;
+}
+
+uint8_t writePriceToConfig(float tempPrice) {
+  DWORD file_size;
+  long length;
+  FRESULT fre;
+  fre = f_open(&SDFile, "system/config.txt", FA_READ);
+  if (fre != FR_OK) {
+	printf("can't open config.txt file\r\n");
+	return 0;
+  }
+  file_size = f_size(&SDFile);
+  UINT br;
+  uint8_t *data;
+  f_lseek(&SDFile, file_size);
+  length = f_tell(&SDFile);
+  f_lseek(&SDFile, 0);
+  data = (uint8_t *)malloc(length + 1);
+  if (f_read(&SDFile, data, length, &br) == FR_OK) {
+	data[br] = '\0';
+  }
+  f_close(&SDFile);
+  cJSON *root = cJSON_Parse((char *)data);
+  if (!root) {
+	printf("Failed to parse JSON\r\n");
+	free(data);
+	return 0;
+  }
+  cJSON *cJSON_price = cJSON_GetObjectItemCaseSensitive(root, "Price");
+  if (cJSON_price && cJSON_IsNumber(cJSON_price)) {
+	cJSON_SetNumberValue(cJSON_price, tempPrice);
+  }
+  char *new_data = cJSON_Print(root);
+  fre = f_open(&SDFile, "system/config.txt", FA_WRITE);
+  if (fre != FR_OK) {
+	printf("can't open config.txt\r\n");
+	cJSON_Delete(root);
+	free(data);
+	free(new_data);
+	return 0;
+  }
+  UINT bw;
+  if (f_write(&SDFile, new_data, strlen(new_data), &bw) == FR_OK) {
+	printf("set up Price successful\r\n");
+	price = tempPrice;
+	f_close(&SDFile);
+	cJSON_Delete(root);
+	free(data);
+	free(new_data);
+	return 1;
+  } else {
+	printf("set up Price failure\r\n");
+	f_close(&SDFile);
+	cJSON_Delete(root);
+	free(data);
+	free(new_data);
+	return 0;
+  }
+
+}
+
+void createOrderFile(){
+
+}
+
+//定时器中断回调函数
+//1ms中断
+uint16_t timCount = 0;
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+  if (htim->Instance == TIM4) {
+	timCount++;
+	if (timCount == 1000) {
+	  speed = (float)getSensor_Count() / 20.0f * wheelRadius * 3.6f;
+	  timCount = 0;
+	  setSensor_Count(0);
+	  Mileage += speed * 2.0f * 3.14f * wheelRadius * (1.0f / 3600.0f);
+	}
+  }
 }
 
 
