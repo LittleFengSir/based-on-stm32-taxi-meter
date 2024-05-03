@@ -111,15 +111,26 @@ int main(void)
   WS_TFT_Init();
   HAL_UARTEx_ReceiveToIdle_DMA(&huart1,cmdBuffer, sizeof(cmdBuffer));
   __HAL_DMA_DISABLE_IT(&hdma_usart1_rx,DMA_IT_HT);
+
   printf("System Init OK!\r\n");
   Staring_Menu();
   taxiSystemInit();
+  uint8_t menuFlag = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
-	user_Menu();
+
+	if(keyVal == 2 && (getChangeFlag() == 0)){
+	  menuFlag++;
+	  WS_TFT_Clear(WHITE);
+	  keyVal = 0;
+	}
+	if(menuFlag == 0) user_Menu();
+	else if(menuFlag == 1) changePriceMenu();
+	else menuFlag = 0;
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

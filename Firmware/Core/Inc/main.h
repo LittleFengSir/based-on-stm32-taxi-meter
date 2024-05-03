@@ -71,6 +71,9 @@ void Error_Handler(void);
 #define KEY2_Pin GPIO_PIN_1
 #define KEY2_GPIO_Port GPIOA
 #define KEY2_EXTI_IRQn EXTI1_IRQn
+#define SENOR_Pin GPIO_PIN_3
+#define SENOR_GPIO_Port GPIOA
+#define SENOR_EXTI_IRQn EXTI3_IRQn
 #define KEY3_Pin GPIO_PIN_4
 #define KEY3_GPIO_Port GPIOA
 #define KEY3_EXTI_IRQn EXTI4_IRQn
