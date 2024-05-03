@@ -14,5 +14,8 @@
 
 void Staring_Menu();
 void user_Menu();
+void changePriceMenu();
+
+uint8_t getChangeFlag();
 
 #endif //APPS_CORE_APPS_INC_MENU_H_
