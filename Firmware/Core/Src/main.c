@@ -113,6 +113,7 @@ int main(void)
   __HAL_DMA_DISABLE_IT(&hdma_usart1_rx,DMA_IT_HT);
   printf("System Init OK!\r\n");
   Staring_Menu();
+  taxiSystemInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
