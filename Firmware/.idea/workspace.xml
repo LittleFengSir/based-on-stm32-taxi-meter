@@ -21,13 +21,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc0e42a9-447f-4767-81af-97495cfd60da" name="更改" comment="general">
-      <change afterPath="$PROJECT_DIR$/Core/apps/Inc/meter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/apps/src/meter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/rtc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/apps/src/command.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/src/command.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/apps/Inc/key.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/Inc/key.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/apps/Inc/menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/Inc/menu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/apps/Inc/meter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/Inc/meter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/apps/src/key.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/src/key.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/apps/src/menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/src/menu.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/apps/src/meter.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/apps/src/meter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Firmware.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/Firmware.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-59daec055a4759dc6ad9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-82465f17fe96ee687520.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +59,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LittleFengSir"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LittleFengSir/based-on-stm32-taxi-meter.git",
+    "accountId": "4661d027-b794-4292-bbbc-94ee23f81f9d"
+  }
+}]]></component>
   <component name="PerforceDirect.Settings">
     <option name="CHARSET" value="无" />
   </component>
@@ -64,6 +94,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
@@ -122,7 +153,7 @@
       <workItem from="1714630715763" duration="858000" />
       <workItem from="1714632372114" duration="397000" />
       <workItem from="1714643121017" duration="16606000" />
-      <workItem from="1714682272734" duration="8865000" />
+      <workItem from="1714682272734" duration="33112000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -204,7 +235,71 @@
       <option name="project" value="LOCAL" />
       <updated>1714715884109</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added modification to date">
+      <option name="closed" value="true" />
+      <created>1714715936026</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714715936026</updated>
+    </task>
+    <task id="LOCAL-00012" summary="general">
+      <option name="closed" value="true" />
+      <created>1714715945895</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714715945895</updated>
+    </task>
+    <task id="LOCAL-00013" summary="general">
+      <option name="closed" value="true" />
+      <created>1714716017527</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714716017527</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implement functions for the odometer">
+      <option name="closed" value="true" />
+      <created>1714716042270</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714716042270</updated>
+    </task>
+    <task id="LOCAL-00015" summary="general">
+      <option name="closed" value="true" />
+      <created>1714716064105</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714716064105</updated>
+    </task>
+    <task id="LOCAL-00016" summary="general">
+      <option name="closed" value="true" />
+      <created>1714716082142</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714716082142</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add taxiSystemInit">
+      <option name="closed" value="true" />
+      <created>1714716101288</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714716101288</updated>
+    </task>
+    <task id="LOCAL-00018" summary="general">
+      <option name="closed" value="true" />
+      <created>1714716109645</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714716109645</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,18 +317,10 @@
     <MESSAGE value="update menu function" />
     <MESSAGE value="add key control" />
     <MESSAGE value="Add HAL_UARTEx_RxEventCallback &amp; HAL_RTCEx_RTCEventCallback" />
+    <MESSAGE value="Added modification to date" />
+    <MESSAGE value="Implement functions for the odometer" />
+    <MESSAGE value="Add taxiSystemInit" />
     <MESSAGE value="general" />
     <option name="LAST_COMMIT_MESSAGE" value="general" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Core/apps/src/meter.c</url>
-          <line>37</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -11,10 +11,10 @@
 				<Option working_dir="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Firmware.elf">
@@ -28,18 +28,18 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Include"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/FATFS/Target"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/FATFS/App"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/USB_DEVICE/App"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/USB_DEVICE/Target"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src/drivers"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src/drivers"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Include"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/Inc"/>
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"/>
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
@@ -49,10 +49,10 @@
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf"/>
-					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Firmware.elf/fast">
@@ -66,18 +66,18 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Include"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/FATFS/Target"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/FATFS/App"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/USB_DEVICE/App"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/USB_DEVICE/Target"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src/drivers"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
-					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Middlewares/Third_Party/FatFs/src/drivers"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Drivers/CMSIS/Include"/>
 					<Add directory="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/Core/apps/Inc"/>
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"/>
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
@@ -87,30 +87,30 @@
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf/fast"/>
-					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
