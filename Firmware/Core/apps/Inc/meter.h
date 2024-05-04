@@ -21,4 +21,5 @@ float getSpeed();
 float getMileage();
 void setMileage(float km);
 uint8_t writePriceToConfig(float tempPrice);
+uint8_t createOrderFile();
 #endif //FIRMWARE_CORE_APPS_INC_METER_H_
