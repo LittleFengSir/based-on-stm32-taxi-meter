@@ -14,5 +14,5 @@
 #include "string.h"
 
 void command_Process(uint8_t *str,uint16_t size);
-
+uint8_t parsedate(const char *date_str, int *year, int *month, int *day);
 #endif //FIRMWARE_CORE_APPS_INC_COMMAND_H_
