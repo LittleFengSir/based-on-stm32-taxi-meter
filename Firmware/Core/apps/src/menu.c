@@ -69,6 +69,12 @@ void user_Menu() {
   }
   if (beginFlag == 3) {
 	HAL_TIM_Base_Stop_IT(&htim4);
+	uint8_t ret = createOrderFile();
+	if(ret == 1){
+	  printf("create order successful\r\n");
+	}else{
+	  printf("Create order fail\r\n");
+	}
 	LED_BLUE_OFF;
 	beginFlag = 0;
   }
