@@ -20,7 +20,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb2afec-d8d1-4b91-83ed-709cb907e75a" name="更改" comment="" />
+    <list default="true" id="cdb2afec-d8d1-4b91-83ed-709cb907e75a" name="更改" comment="general">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/Core/apps/Inc/command.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/Core/apps/Inc/command.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/Core/apps/Inc/meter.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/Core/apps/Inc/meter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/Core/apps/src/menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/Core/apps/src/menu.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/Core/apps/src/meter.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/Core/apps/src/meter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.elf" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/cmake-build-debug/Firmware.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Firmware/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Firmware/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +43,21 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LittleFengSir&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LittleFengSir/based-on-stm32-taxi-meter.git&quot;,
+    &quot;accountId&quot;: &quot;4661d027-b794-4292-bbbc-94ee23f81f9d&quot;
+  }
+}</component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2023" />
@@ -52,7 +80,8 @@
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/Core/Src&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Bootloader/CMakeLists.txt&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,11 +100,6 @@
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.Bootloader.elf">
     <configuration name="Bootloader.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Bootloader" TARGET_NAME="Bootloader.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Bootloader" RUN_TARGET_NAME="Bootloader.elf">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -102,7 +126,18 @@
       <option name="presentableId" value="Default" />
       <updated>1714112148824</updated>
       <workItem from="1714112181687" duration="4456000" />
+      <workItem from="1714771717183" duration="579000" />
+      <workItem from="1714814496562" duration="719000" />
     </task>
+    <task id="LOCAL-00001" summary="general">
+      <option name="closed" value="true" />
+      <created>1714771954728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714771954728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,5 +147,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="general" />
+    <option name="LAST_COMMIT_MESSAGE" value="general" />
   </component>
 </project>

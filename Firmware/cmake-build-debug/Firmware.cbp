@@ -11,10 +11,10 @@
 				<Option working_dir="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Firmware.elf">
@@ -49,10 +49,10 @@
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf"/>
+					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Firmware.elf/fast">
@@ -87,30 +87,30 @@
 					<Add directory="C:/STM32_needs/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf/fast"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf/fast"/>
+					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/13552/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Work/Project/Stm32_Project/Taxi_meters/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
