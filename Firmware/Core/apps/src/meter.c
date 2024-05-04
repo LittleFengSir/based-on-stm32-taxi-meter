@@ -65,7 +65,7 @@ uint8_t checkInitFile() {
   if (fre == FR_OK) {
 	f_close(&SDFile);
 	return 0;
-  } else if(fre == FR_NO_FILE){
+  } else if (fre == FR_NO_FILE) {
 	createConfigFile();
   }
   f_close(&SDFile);
@@ -78,6 +78,7 @@ void taxiSystemInit() {
   uint8_t *data;
   cJSON *json, *item;
   uint8_t res = checkInitFile();
+  RTC_DateTypeDef sDate;
   if (res == 0) {
 	printf("config.txt exists\r\n");
   }
@@ -114,6 +115,14 @@ void taxiSystemInit() {
   item = cJSON_GetObjectItemCaseSensitive(json, "Date");
   if (item && cJSON_IsString(item)) {
 	date = item->valuestring;
+	int year, month, day;
+	uint8_t ret = parsedate(date, &year, &month, &day);
+	if (ret == 0) {
+	  sDate.Year = (uint8_t)(year % 100);
+	  sDate.Month = (uint8_t)month;
+	  sDate.Date = (uint8_t)day;
+	  HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN);
+	}
 	printf("Date: %s\r\n", date);
   } else {
 	printf("Not find name\r\n");
@@ -161,7 +170,8 @@ void setMileage(float km) {
   Mileage = km;
 }
 
-uint8_t writePriceToConfig(float tempPrice) {
+//将价格写入到config.txt文件中
+uint8_t writePriceToConfig(const float tempPrice) {
   DWORD file_size;
   long length;
   FRESULT fre;
@@ -220,8 +230,118 @@ uint8_t writePriceToConfig(float tempPrice) {
 
 }
 
-void createOrderFile(){
+//检查目录是否存在，如果不存在将会创建
+uint8_t checkDirExist(const char *dir) {
+  FILINFO fno;
+  FRESULT fre;
+  fre = f_stat(dir, &fno);
+  if (fre != FR_OK) {
+	printf("%s dir is not exist\r\n", dir);
+	printf("Will create %s dir\r\n", dir);
+	fre = f_mkdir(dir);
+	if (fre != FR_OK) {
+	  printf("create %s dir fail\r\n", dir);
+	  return 0;
+	} else {
+	  printf("create %s dir successful\r\n", dir);
+	  return 1;
+	}
+  }
+  printf("%s dir exist\r\n", dir);
+  return 1;
+}
+//统计该目录下的文件个数
+int count_files_in_dir(const char *path) {
+  DIR dir;
+  FILINFO fno;
+  int count = 0;
+  FRESULT res;
+  res = f_opendir(&dir, path);
+  if (res != FR_OK) {
+	return -1;
+  }
+  while (1) {
+	res = f_readdir(&dir, &fno);
+	if (res != FR_OK || fno.fname[0] == 0) {
+	  break;
+	}
+	if (fno.fname[0] == '.' && (fno.fname[1] == 0 || (fno.fname[2] == 0))) {
+	  continue;
+	}
+	count++;
+  }
+  f_closedir(&dir);
+  return count;
+}
+//创建订单文件
+uint8_t createOrderFile() {
+  RTC_DateTypeDef sDate;
+  RTC_TimeTypeDef sTime;
+  char dateDir[15];
+  FRESULT fre;
+  //检查order目录是否存在
+  uint8_t ret = checkDirExist("order");
+  if (ret == 0) {
+	printf("order dir create fail\r\n");
+	return 0;
+  }
+  //检查年月日目录是否存在
+  HAL_RTC_GetDate(&hrtc, &sDate, RTC_FORMAT_BIN);
+  sprintf(dateDir, "order/20%02u%02u%02u", sDate.Year, sDate.Month, sDate
+	  .Date);
+  ret = checkDirExist(dateDir);
+  if (ret == 0) {
+	printf("%s create fail\r\n", dateDir);
+	return 0;
+  }
 
+  //统计order/20%02u%02u%02u 下的文件个数
+  int count = count_files_in_dir(dateDir);
+  count += 1;
+
+  char tempString[20];
+
+  sprintf(tempString, "20%02u-%02u-%02u", sDate.Year, sDate.Month, sDate
+	  .Date);
+  //创建JSON格式的数据
+  cJSON *root = cJSON_CreateObject();
+  cJSON_AddStringToObject(root, "date", tempString);
+  HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
+  sprintf(tempString, "%02u:%02u:%02u", sTime.Hours, sTime.Minutes, sTime
+	  .Seconds);
+  cJSON_AddNumberToObject(root, "id", count);
+  cJSON_AddStringToObject(root, "time", tempString);
+  sprintf(tempString, "%.2f", getPrice());
+  cJSON_AddStringToObject(root, "price", tempString);
+  sprintf(tempString, "%.2f", getMileage());
+  cJSON_AddStringToObject(root, "Mileage", tempString);
+  sprintf(tempString, "%.2f", (getPrice() * getMileage()));
+  cJSON_AddStringToObject(root, "totalPrice", tempString);
+  char *data = cJSON_Print(root);
+
+  //创建文件
+  char fileDir_name[25];
+  sprintf(fileDir_name, "%s/%d.txt", dateDir, count);
+  fre = f_open(&SDFile, fileDir_name, FA_READ | FA_WRITE | FA_CREATE_NEW);
+  if (fre != FR_OK) {
+	printf("create %d.txt fail\r\n", count);
+	f_close(&SDFile);
+	return 0;
+  }
+  UINT bw;
+  if (f_write(&SDFile, data, strlen(data), &bw) == FR_OK) {
+	printf("Write %d.txt ok\r\n", count);
+	f_close(&SDFile);
+	free(data);
+	cJSON_Delete(root);
+	return 1;
+  } else {
+	printf("Write %d.txt fail\r\n", count);
+	f_close(&SDFile);
+	free(data);
+	cJSON_Delete(root);
+	return 0;
+  }
 }
 
 //定时器中断回调函数
