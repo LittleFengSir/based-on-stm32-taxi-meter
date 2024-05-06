@@ -18,7 +18,7 @@ Then, the motor simulates the normal driving of a taxi. I used a motor, a horse 
 
 This project also uses an SD card, which has a capacity of 32GB.
 
-# Program Architecture
+# Program Description
 When initializing the system, a config.txt with default parameters will be created and saved in the system directory. By reading the SD card, the relevant parameters of the system can be modified. But there are no parameters, just the date and price, as well as the username and password of the serial port (this is not implemented, just send the command directly after connecting to the serial port, without verifying the username and password).
 The program of this project uses the cJSON library, so it is necessary to include the compilation of the cJSON library during compilation, and the middleware FATFS file system and USB device are used. According to. ioc, USB devices are known to be large capacity storage devices, mainly designed to access the contents of SD cards without unplugging them (this is not very comprehensive, there are some minor bugs, and there may be situations where the computer cannot recognize USB devices).
 When the pricing starts, timer 4 will start working, calculating the speed and mileage every 1 second. After the pricing is completed, the interrupt of timer 4 will be closed, and an order file will be created and saved in. txt format. The content will be saved in JSON format for reading and storage. I also tried using the. json extension, but it seems that the Fatfs file system does not support it, so I used the. txt extension.
